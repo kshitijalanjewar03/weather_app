@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "YOUR_API_KEY_HERE"  # Replace with your OpenWeather API key
+API_KEY = "f36beb166bf21a83187c4bb942bb71ba"  
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 
@@ -16,7 +16,7 @@ def get_weather(city):
         data = response.json()
 
         if data["cod"] != 200:
-            print("❌ City not found. Try again.")
+            print(" City not found. Try again.")
             return
 
         temp = data["main"]["temp"]
